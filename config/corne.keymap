@@ -17,11 +17,10 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
-            quick-tap-ms = <175>;
-            require-prior-idle-ms = <0>;
+            quick-tap-ms = <120>;
+            require-prior-idle-ms = <100>;
             hold-trigger-key-positions = <14 15 17 16 37 36 38 13 25 26 27 28 29 24 12 3 2 1 0 5 4>;
-            flavor = "tap-preferred";
-            hold-trigger-on-release;
+            flavor = "balanced";
         };
 
         HMR: HMR {
@@ -31,10 +30,10 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
-            quick-tap-ms = <175>;
-            flavor = "tap-preferred";
-            hold-trigger-on-release;
+            quick-tap-ms = <120>;
+            flavor = "balanced";
             hold-trigger-key-positions = <6 18 40 39 30 31 32 19 20 7 8 10 9 21 33 22 11 35 23 34>;
+            require-prior-idle-ms = <100>;
         };
     };
 
