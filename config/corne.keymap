@@ -67,9 +67,9 @@
 
             display-name = "Lower";
             bindings = <
-&kp TILDE  &kp EXCL      &kp AT        &kp HASH      &kp DOLLAR    &kp PERCENT      &kp CARET         &kp AMPERSAND      &kp LESS_THAN         &kp GREATER_THAN       &kp GREATER_THAN  &kp UNDER
-&trans     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5     &kp NUMBER_6      &kp NUMBER_7       &kp N8                &kp N9                 &kp N0            &kp DOUBLE_QUOTES
-&kp EQUAL  &kp ASTRK     &kp SLASH     &kp PLUS      &kp MINUS     &kp BACKSLASH    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE    &kp RIGHT_BRACE
+&kp TILDE  &kp EXCL      &kp AT        &kp HASH      &kp DOLLAR    &kp PERCENT      &kp CARET         &kp AMPERSAND      &kp LESS_THAN         &kp GREATER_THAN       &kp UNDER       &kp DELETE
+&trans     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5     &kp NUMBER_6      &kp NUMBER_7       &kp N8                &kp N9                 &kp N0          &kp DOUBLE_QUOTES
+&kp EQUAL  &kp ASTRK     &kp SLASH     &kp PLUS      &kp MINUS     &kp BACKSLASH    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE
                                        &none         &none         &kp BACKSPACE    &kp SPACE         &kp LEFT_SHIFT     &kp ENTER
             >;
         };
