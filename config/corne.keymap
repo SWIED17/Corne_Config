@@ -37,15 +37,7 @@
         };
     };
 
-    combos {
-        compatible = "zmk,combos";
-
-        MissionControl {
-            bindings = <&kp LC(UP_ARROW)>;
-            key-positions = <14 37>;
-            layers = <3>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
