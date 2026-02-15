@@ -91,7 +91,7 @@
             display-name = "Raise";
             bindings = <
 &bt BT_CLR  &Mac    &Windows       &iOS           &trans         &trans           &none      &kp HOME        &kp PAGE_DOWN  &kp PAGE_UP       &kp END          &none
-&trans      &trans  &kp F2         &trans         &kp F4         &trans           &none      &kp LEFT        &kp DOWN       &kp UP_ARROW      &kp RIGHT_ARROW  &none
+&trans      &trans  &kp F2         &trans         &kp F4         &kp LG(H)        &none      &kp LEFT        &kp DOWN       &kp UP_ARROW      &kp RIGHT_ARROW  &none
 &trans      &none   &kp LG(LS(T))  &kp LG(LS(R))  &kp LG(LS(S))  &trans           &none      &kp LC(LEFT)    &kp LC(DOWN)   &kp LC(UP_ARROW)  &kp LC(RIGHT)    &none
                                    &none          &none          &kp BACKSPACE    &kp SPACE  &kp LEFT_SHIFT  &kp ENTER
             >;
@@ -111,7 +111,7 @@
             display-name = "Raise";
             bindings = <
 &bt BT_CLR  &Mac    &Windows              &iOS            &trans                &trans           &none      &kp HOME        &kp PAGE_DOWN  &kp PAGE_UP   &kp END          &none
-&trans      &trans  &kp F2                &trans          &kp F4                &trans           &none      &kp LEFT        &kp DOWN       &kp UP_ARROW  &kp RIGHT_ARROW  &none
+&trans      &trans  &kp F2                &trans          &kp F4                &kp F5           &none      &kp LEFT        &kp DOWN       &kp UP_ARROW  &kp RIGHT_ARROW  &none
 &trans      &none   &kp LG(LS(NUMBER_2))  &kp LG(LS(N5))  &kp LG(LS(NUMBER_4))  &trans           &none      &kp LA(LEFT)    &none          &none         &kp LA(RIGHT)    &none
                                           &none           &none                 &kp BACKSPACE    &kp SPACE  &kp LEFT_SHIFT  &kp ENTER
             >;
