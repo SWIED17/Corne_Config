@@ -107,7 +107,7 @@
             >;
         };
 
-        MacNavFunction {
+        MaciOSNavFunction {
             display-name = "Raise";
             bindings = <
 &bt BT_CLR  &Mac    &Windows              &iOS            &trans                &trans           &none      &kp HOME        &kp PAGE_DOWN  &kp PAGE_UP   &kp END          &none
