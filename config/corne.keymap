@@ -50,7 +50,7 @@
         Windows: Windows {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 1 &bt BT_SEL 1>;
+            bindings = <&to 0 &bt BT_SEL 1>;
             label = "WINDOWS";
         };
 
