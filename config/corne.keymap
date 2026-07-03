@@ -134,12 +134,21 @@
             >;
         };
 
-        Mouse {
+        MouseWindows {
             bindings = <
-&trans  &trans      &trans  &trans  &trans  &trans       &trans             &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans
-&trans  &trans      &trans  &trans  &trans  &trans       &kp C_AC_ZOOM_OUT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &kp C_AC_ZOOM_OUT
-&trans  &bt BT_CLR  &trans  &trans  &trans  &trans       &trans             &trans          &trans          &trans        &trans           &trans
-                            &trans  &trans  &mkp LCLK    &mkp RCLK          &trans          &trans
+&trans  &trans      &trans  &trans  &trans  &trans       &kp LC(MINUS)  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &kp LC(PLUS)
+&trans  &trans      &trans  &trans  &trans  &trans       &trans         &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans
+&trans  &bt BT_CLR  &trans  &trans  &trans  &trans       &trans         &trans          &trans          &trans        &trans           &trans
+                            &trans  &trans  &mkp LCLK    &mkp RCLK      &trans          &trans
+            >;
+        };
+
+        MouseMac {
+            bindings = <
+&trans  &trans      &trans  &trans  &trans  &trans       &kp LG(MINUS)  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &kp LG(PLUS)
+&trans  &trans      &trans  &trans  &trans  &trans       &trans         &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans
+&trans  &bt BT_CLR  &trans  &trans  &trans  &trans       &trans         &trans          &trans          &trans        &trans           &trans
+                            &trans  &trans  &mkp LCLK    &mkp RCLK      &trans          &trans
             >;
         };
     };
