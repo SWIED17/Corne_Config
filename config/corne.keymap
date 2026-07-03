@@ -91,10 +91,10 @@
 
             display-name = "Raise";
             bindings = <
-&bt BT_CLR        &Mac               &Windows       &iOS           &trans         &trans           &none      &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP      &msc SCRL_RIGHT  &none
-&kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &kp F2         &kp F3         &kp F4         &kp LG(H)        &none      &kp LEFT        &kp DOWN        &kp UP_ARROW      &kp RIGHT_ARROW  &none
-&kp LG(TAB)       &none              &kp LG(LS(T))  &kp LG(LS(R))  &kp LG(LS(S))  &trans           &none      &kp LC(LEFT)    &kp LC(DOWN)    &kp LC(UP_ARROW)  &kp LC(RIGHT)    &kp INS
-                                                    &none          &none          &kp BACKSPACE    &kp SPACE  &kp LEFT_SHIFT  &kp ENTER
+&bt BT_CLR        &Mac               &Windows       &iOS           &trans         &trans           &none              &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP      &msc SCRL_RIGHT  &none
+&kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &kp F2         &kp F3         &kp F4         &kp LG(H)        &kp C_AC_ZOOM_OUT  &kp LEFT        &kp DOWN        &kp UP_ARROW      &kp RIGHT_ARROW  &kp C_AC_ZOOM_IN
+&kp LG(TAB)       &none              &kp LG(LS(T))  &kp LG(LS(R))  &kp LG(LS(S))  &trans           &none              &kp LC(LEFT)    &kp LC(DOWN)    &kp LC(UP_ARROW)  &kp LC(RIGHT)    &kp INS
+                                                    &none          &none          &kp BACKSPACE    &kp SPACE          &kp LEFT_SHIFT  &kp ENTER
             >;
         };
 
@@ -111,10 +111,10 @@
         MaciOSNavFunction {
             display-name = "Raise";
             bindings = <
-&bt BT_CLR    &Mac           &Windows              &iOS            &trans                &trans           &none      &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &none
-&kp LC(LEFT)  &kp LC(RIGHT)  &kp F2                &kp F3          &kp F4                &kp F5           &none      &kp LEFT        &kp DOWN        &kp UP_ARROW  &kp RIGHT_ARROW  &none
-&kp F16       &none          &kp LG(LS(NUMBER_2))  &kp LG(LS(N5))  &kp LG(LS(NUMBER_4))  &trans           &none      &kp LA(LEFT)    &none           &none         &kp LA(RIGHT)    &kp INS
-                                                   &none           &none                 &kp BACKSPACE    &kp SPACE  &kp LEFT_SHIFT  &kp ENTER
+&bt BT_CLR    &Mac           &Windows              &iOS            &trans                &trans           &none              &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &none
+&kp LC(LEFT)  &kp LC(RIGHT)  &kp F2                &kp F3          &kp F4                &kp F5           &kp C_AC_ZOOM_OUT  &kp LEFT        &kp DOWN        &kp UP_ARROW  &kp RIGHT_ARROW  &kp C_AC_ZOOM_IN
+&kp F16       &none          &kp LG(LS(NUMBER_2))  &kp LG(LS(N5))  &kp LG(LS(NUMBER_4))  &trans           &none              &kp LA(LEFT)    &none           &none         &kp LA(RIGHT)    &kp INS
+                                                   &none           &none                 &kp BACKSPACE    &kp SPACE          &kp LEFT_SHIFT  &kp ENTER
             >;
         };
 
