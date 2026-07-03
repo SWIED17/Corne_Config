@@ -44,7 +44,7 @@
         Mac: Mac {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 2 &bt BT_SEL 0>;
+            bindings = <&to 3 &bt BT_SEL 0>;
             label = "MAC";
         };
 
@@ -58,7 +58,7 @@
         iOS: iOS {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 2 &bt BT_SEL 2>;
+            bindings = <&to 3 &bt BT_SEL 2>;
             label = "IOS";
         };
     };
@@ -75,10 +75,10 @@
 
             display-name = "Base";
             bindings = <
-&lt 5 ESCAPE    &kp Q  &kp W            &kp E                                   &kp R                &kp T            &kp Y      &kp U                 &kp I             &kp O             &kp P         &kp DEL
+&lt 2 ESCAPE    &kp Q  &kp W            &kp E                                   &kp R                &kp T            &kp Y      &kp U                 &kp I             &kp O             &kp P         &kp DEL
 &kp CAPSLOCK    &kp A  &HML LEFT_GUI S  &HML LEFT_ALT D                         &HML LEFT_CONTROL F  &kp G            &kp H      &HMR RIGHT_CONTROL J  &HMR RIGHT_ALT K  &HMR RIGHT_GUI L  &kp SEMI      &kp SQT
 &kp LEFT_SHIFT  &kp Z  &kp X            &kp C                                   &kp V                &kp B            &kp N      &kp M                 &kp COMMA         &kp DOT           &kp QUESTION  &kp EXCL
-                                        &lt 1 C_AC_NEXT_KEYBOARD_LAYOUT_SELECT  &lt 4 TAB            &kp BACKSPACE    &kp SPACE  &kp LEFT_SHIFT        &kp ENTER
+                                        &lt 1 C_AC_NEXT_KEYBOARD_LAYOUT_SELECT  &lt 6 TAB            &kp BACKSPACE    &kp SPACE  &kp LEFT_SHIFT        &kp ENTER
             >;
         };
 
@@ -98,13 +98,22 @@
             >;
         };
 
+        MouseWindows {
+            bindings = <
+&trans  &trans      &trans  &trans  &trans  &trans       &kp LC(MINUS)  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &kp LC(PLUS)
+&trans  &trans      &trans  &trans  &trans  &trans       &trans         &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans
+&trans  &bt BT_CLR  &trans  &trans  &trans  &trans       &trans         &trans          &trans          &trans        &trans           &trans
+                            &trans  &trans  &mkp LCLK    &mkp RCLK      &trans          &trans
+            >;
+        };
+
         MacOSiOS {
             display-name = "Mac";
             bindings = <
-&lt 6 ESCAPE    &kp Q  &kp W            &kp E                                   &kp R                &kp T            &kp Y      &kp U                 &kp I             &kp O             &kp P         &kp DEL
+&lt 5 ESCAPE    &kp Q  &kp W            &kp E                                   &kp R                &kp T            &kp Y      &kp U                 &kp I             &kp O             &kp P         &kp DEL
 &kp CAPSLOCK    &kp A  &HML LEFT_GUI S  &HML LEFT_ALT D                         &HML LEFT_CONTROL F  &kp G            &kp H      &HMR RIGHT_CONTROL J  &HMR RIGHT_ALT K  &HMR RIGHT_GUI L  &kp SEMI      &kp SQT
 &kp LEFT_SHIFT  &kp Z  &kp X            &kp C                                   &kp V                &kp B            &kp N      &kp M                 &kp COMMA         &kp DOT           &kp QUESTION  &kp EXCL
-                                        &lt 3 C_AC_NEXT_KEYBOARD_LAYOUT_SELECT  &lt 4 TAB            &kp BACKSPACE    &kp SPACE  &kp LEFT_SHIFT        &kp ENTER
+                                        &lt 4 C_AC_NEXT_KEYBOARD_LAYOUT_SELECT  &lt 6 TAB            &kp BACKSPACE    &kp SPACE  &kp LEFT_SHIFT        &kp ENTER
             >;
         };
 
@@ -115,6 +124,15 @@
 &kp LC(LEFT)  &kp LC(RIGHT)  &kp F2                &kp F3          &kp F4                &kp F5           &trans     &kp LEFT        &kp DOWN   &kp UP_ARROW  &kp RIGHT_ARROW  &trans
 &kp F16       &none          &kp LG(LS(NUMBER_2))  &kp LG(LS(N5))  &kp LG(LS(NUMBER_4))  &trans           &none      &kp LA(LEFT)    &none      &none         &kp LA(RIGHT)    &kp INS
                                                    &none           &none                 &kp BACKSPACE    &kp SPACE  &kp LEFT_SHIFT  &kp ENTER
+            >;
+        };
+
+        MouseMac {
+            bindings = <
+&trans  &trans      &trans  &trans  &trans  &trans       &kp LG(MINUS)  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &kp LG(PLUS)
+&trans  &trans      &trans  &trans  &trans  &trans       &trans         &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans
+&trans  &bt BT_CLR  &trans  &trans  &trans  &trans       &trans         &trans          &trans          &trans        &trans           &trans
+                            &trans  &trans  &mkp LCLK    &mkp RCLK      &trans          &trans
             >;
         };
 
@@ -131,24 +149,6 @@
 &trans     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5     &kp NUMBER_6      &kp NUMBER_7       &kp N8                &kp N9                 &kp N0          &kp PIPE
 &kp EQUAL  &kp ASTRK     &kp SLASH     &kp PLUS      &kp MINUS     &kp BACKSLASH    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE
                                        &none         &none         &kp BACKSPACE    &kp SPACE         &kp LEFT_SHIFT     &kp ENTER
-            >;
-        };
-
-        MouseWindows {
-            bindings = <
-&trans  &trans      &trans  &trans  &trans  &trans       &kp LC(MINUS)  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &kp LC(PLUS)
-&trans  &trans      &trans  &trans  &trans  &trans       &trans         &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans
-&trans  &bt BT_CLR  &trans  &trans  &trans  &trans       &trans         &trans          &trans          &trans        &trans           &trans
-                            &trans  &trans  &mkp LCLK    &mkp RCLK      &trans          &trans
-            >;
-        };
-
-        MouseMac {
-            bindings = <
-&trans  &trans      &trans  &trans  &trans  &trans       &kp LG(MINUS)  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &kp LG(PLUS)
-&trans  &trans      &trans  &trans  &trans  &trans       &trans         &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans
-&trans  &bt BT_CLR  &trans  &trans  &trans  &trans       &trans         &trans          &trans          &trans        &trans           &trans
-                            &trans  &trans  &mkp LCLK    &mkp RCLK      &trans          &trans
             >;
         };
     };
