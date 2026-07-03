@@ -93,7 +93,7 @@
             bindings = <
 &none             &Mac               &Windows       &iOS           &none          &none            &none      &kp LC(LEFT_ARROW)  &kp LC(DOWN)  &kp LC(UP_ARROW)  &kp LC(RIGHT)    &none
 &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &kp F2         &kp F3         &kp F4         &kp LG(H)        &none      &kp LEFT            &kp DOWN      &kp UP_ARROW      &kp RIGHT_ARROW  &kp INS
-&kp LG(TAB)       &none              &kp LG(LS(T))  &kp LG(LS(R))  &kp LG(LS(S))  &none            &none      &kp HOME            &kp LC(HOME)  &kp LC(END)       &kp END          &none
+&kp LG(TAB)       &none              &kp LG(LS(T))  &kp LG(LS(R))  &kp LG(LS(S))  &none            &none      &kp HOME            &kp LC(END)   &kp LC(HOME)      &kp END          &none
                                                     &none          &none          &kp BACKSPACE    &kp SPACE  &kp LEFT_SHIFT      &kp ENTER
             >;
         };
