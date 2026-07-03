@@ -98,7 +98,7 @@
             >;
         };
 
-        MouseWindows {
+        WindowsMouse {
             bindings = <
 &trans  &trans      &trans  &trans  &trans  &trans       &kp LC(MINUS)  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &kp LC(PLUS)
 &trans  &trans      &trans  &trans  &trans  &trans       &trans         &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans
@@ -120,14 +120,14 @@
         MaciOSNavFunction {
             display-name = "Raise";
             bindings = <
-&trans        &Mac           &Windows              &iOS            &trans                &trans           &none      &kp LG(UP_ARROW)  &kp LG(LEFT_ARROW)  &kp LG(RIGHT)  &kp LG(DOWN)     &none
-&kp LC(LEFT)  &kp LC(RIGHT)  &kp F2                &kp F3          &kp F4                &kp F5           &trans     &kp LEFT          &kp DOWN            &kp UP_ARROW   &kp RIGHT_ARROW  &trans
-&kp F16       &none          &kp LG(LS(NUMBER_2))  &kp LG(LS(N5))  &kp LG(LS(NUMBER_4))  &trans           &none      &kp LA(LEFT)      &none               &none          &kp LA(RIGHT)    &kp INS
-                                                   &none           &none                 &kp BACKSPACE    &kp SPACE  &kp LEFT_SHIFT    &kp ENTER
+&trans        &Mac           &Windows              &iOS            &trans                &trans           &trans     &kp LG(LEFT_ARROW)  &kp LG(DOWN)  &kp LG(UP_ARROW)  &kp LG(RIGHT)    &none
+&kp LC(LEFT)  &kp LC(RIGHT)  &kp F2                &kp F3          &kp F4                &kp F5           &trans     &kp LEFT            &kp DOWN      &kp UP_ARROW      &kp RIGHT_ARROW  &trans
+&kp F16       &none          &kp LG(LS(NUMBER_2))  &kp LG(LS(N5))  &kp LG(LS(NUMBER_4))  &trans           &none      &kp LA(LEFT)        &none         &none             &kp LA(RIGHT)    &kp INS
+                                                   &none           &none                 &kp BACKSPACE    &kp SPACE  &kp LEFT_SHIFT      &kp ENTER
             >;
         };
 
-        MouseMac {
+        MacMouse {
             bindings = <
 &trans  &trans      &trans  &trans  &trans  &trans       &kp LG(MINUS)  &msc SCRL_LEFT  &msc SCRL_UP    &msc SCRL_DOWN  &msc SCRL_RIGHT  &kp LG(PLUS)
 &trans  &trans      &trans  &trans  &trans  &trans       &trans         &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP    &mmv MOVE_RIGHT  &trans
