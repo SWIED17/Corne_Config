@@ -91,18 +91,18 @@
 
             display-name = "Raise";
             bindings = <
-&trans            &Mac               &Windows       &iOS           &trans         &trans           &none         &trans          &kp HOME      &kp END           &trans           &none
-&kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &kp F2         &kp F3         &kp F4         &kp LG(H)        &trans        &kp LEFT        &kp DOWN      &kp UP_ARROW      &kp RIGHT_ARROW  &trans
-&kp LG(TAB)       &none              &kp LG(LS(T))  &kp LG(LS(R))  &kp LG(LS(S))  &trans           &kp LC(HOME)  &kp LC(LEFT)    &kp LC(DOWN)  &kp LC(UP_ARROW)  &kp LC(RIGHT)    &kp LG(END)
-                                                    &none          &none          &kp BACKSPACE    &kp SPACE     &kp LEFT_SHIFT  &kp ENTER
+&none             &Mac               &Windows       &iOS           &none          &none            &none      &kp LC(LEFT_ARROW)  &kp LC(DOWN)  &kp LC(UP_ARROW)  &kp LC(RIGHT)    &none
+&kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &kp F2         &kp F3         &kp F4         &kp LG(H)        &none      &kp LEFT            &kp DOWN      &kp UP_ARROW      &kp RIGHT_ARROW  &kp INS
+&kp LG(TAB)       &none              &kp LG(LS(T))  &kp LG(LS(R))  &kp LG(LS(S))  &none            &none      &kp HOME            &kp LC(HOME)  &kp LC(END)       &kp END          &none
+                                                    &none          &none          &kp BACKSPACE    &kp SPACE  &kp LEFT_SHIFT      &kp ENTER
             >;
         };
 
         WindowsMouse {
             bindings = <
-&trans  &trans      &trans  &trans  &trans  &trans       &kp LC(MINUS)  &trans          &kp HOME        &kp END       &trans           &kp LC(PLUS)
+&trans  &trans      &trans  &trans  &trans  &trans       &kp LC(MINUS)  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &kp LC(PLUS)
 &trans  &trans      &trans  &trans  &trans  &trans       &trans         &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans
-&trans  &bt BT_CLR  &trans  &trans  &trans  &trans       &trans         &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans
+&trans  &bt BT_CLR  &trans  &trans  &trans  &trans       &trans         &none           &kp END         &kp HOME      &none            &trans
                             &trans  &trans  &mkp LCLK    &mkp RCLK      &trans          &trans
             >;
         };
@@ -120,18 +120,18 @@
         MaciOSNavFunction {
             display-name = "Raise";
             bindings = <
-&trans        &Mac           &Windows              &iOS            &trans                &trans           &trans              &trans          &kp LG(DOWN)  &kp LG(UP_ARROW)  &trans           &none
-&kp LC(LEFT)  &kp LC(RIGHT)  &kp F2                &kp F3          &kp F4                &kp F5           &trans              &kp LEFT        &kp DOWN      &kp UP_ARROW      &kp RIGHT_ARROW  &trans
-&kp F16       &none          &kp LG(LS(NUMBER_2))  &kp LG(LS(N5))  &kp LG(LS(NUMBER_4))  &trans           &kp LG(LEFT_ARROW)  &kp LA(LEFT)    &none         &none             &kp LA(RIGHT)    &kp LG(RIGHT)
-                                                   &none           &none                 &kp BACKSPACE    &kp SPACE           &kp LEFT_SHIFT  &kp ENTER
+&trans        &Mac           &Windows              &iOS            &trans                &trans           &trans     &kp LA(LEFT_ARROW)  &none         &none             &kp LA(RIGHT)    &none
+&kp LC(LEFT)  &kp LC(RIGHT)  &kp F2                &kp F3          &kp F4                &kp F5           &trans     &kp LEFT            &kp DOWN      &kp UP_ARROW      &kp RIGHT_ARROW  &kp INS
+&kp F16       &none          &kp LG(LS(NUMBER_2))  &kp LG(LS(N5))  &kp LG(LS(NUMBER_4))  &trans           &none      &kp LG(LEFT)        &kp LG(DOWN)  &kp LG(UP_ARROW)  &kp LG(RIGHT)    &none
+                                                   &none           &none                 &kp BACKSPACE    &kp SPACE  &kp LEFT_SHIFT      &kp ENTER
             >;
         };
 
         MacMouse {
             bindings = <
-&trans  &trans      &trans  &trans  &trans  &trans       &kp LG(MINUS)  &trans           &kp LG(DOWN_ARROW)  &kp LG(UP_ARROW)  &trans           &kp LG(PLUS)
-&trans  &trans      &trans  &trans  &trans  &trans       &trans         &mmv MOVE_LEFT   &mmv MOVE_DOWN      &mmv MOVE_UP      &mmv MOVE_RIGHT  &trans
-&trans  &bt BT_CLR  &trans  &trans  &trans  &trans       &trans         &msc SCRL_RIGHT  &msc SCRL_UP        &msc SCRL_DOWN    &msc SCRL_LEFT   &trans
+&trans  &trans      &trans  &trans  &trans  &trans       &kp LG(MINUS)  &msc SCRL_RIGHT  &msc SCRL_UP    &msc SCRL_DOWN    &msc SCRL_LEFT   &kp LG(PLUS)
+&trans  &trans      &trans  &trans  &trans  &trans       &trans         &mmv MOVE_LEFT   &mmv MOVE_DOWN  &mmv MOVE_UP      &mmv MOVE_RIGHT  &trans
+&trans  &bt BT_CLR  &trans  &trans  &trans  &trans       &trans         &none            &kp LG(DOWN)    &kp LG(UP_ARROW)  &none            &trans
                             &trans  &trans  &mkp LCLK    &mkp RCLK      &trans           &trans
             >;
         };
