@@ -54,7 +54,7 @@
         };
 
         PowerLayer {
-            bindings = <&lt 7 O>;
+            bindings = <&mo 7>;
             key-positions = <9 10>;
             layers = <0 3>;
         };
@@ -95,10 +95,10 @@
 
             display-name = "Base";
             bindings = <
-&trans  &kp Q  &kp W            &kp E                                   &kp R                &kp T              &kp Y      &kp U                 &kp I             &kp O             &kp P         &trans
-&trans  &kp A  &HML LEFT_GUI S  &HML LEFT_ALT D                         &HML LEFT_CONTROL F  &kp G              &kp H      &HMR RIGHT_CONTROL J  &HMR RIGHT_ALT K  &HMR RIGHT_GUI L  &kp SEMI      &kp SQT
-&trans  &kp Z  &kp X            &kp C                                   &kp V                &kp B              &kp N      &kp M                 &kp COMMA         &kp DOT           &kp QUESTION  &trans
-                                &lt 1 C_AC_NEXT_KEYBOARD_LAYOUT_SELECT  &lt 6 TAB            &lt 2 BACKSPACE    &kp SPACE  &kp LEFT_SHIFT        &kp ENTER
+&none  &kp Q  &kp W            &kp E                                   &kp R                &kp T              &kp Y      &kp U                 &kp I             &kp O             &kp P         &none
+&none  &kp A  &HML LEFT_GUI S  &HML LEFT_ALT D                         &HML LEFT_CONTROL F  &kp G              &kp H      &HMR RIGHT_CONTROL J  &HMR RIGHT_ALT K  &HMR RIGHT_GUI L  &kp APOS      &none
+&none  &kp Z  &kp X            &kp C                                   &kp V                &kp B              &kp N      &kp M                 &kp COMMA         &kp DOT           &kp QUESTION  &none
+                               &lt 1 C_AC_NEXT_KEYBOARD_LAYOUT_SELECT  &lt 6 TAB            &lt 2 BACKSPACE    &kp SPACE  &kp LEFT_SHIFT        &kp ENTER
             >;
         };
 
@@ -120,9 +120,9 @@
 
         WindowsMouse {
             bindings = <
-&trans  &mkp MB4   &trans  &trans  &mkp MB5   &trans    &trans  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans
+&trans  &mkp MB4   &trans  &trans  &mkp MB5   &trans    &none   &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &none
 &trans  &mkp LCLK  &trans  &trans  &mkp RCLK  &trans    &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans
-&trans  &trans     &trans  &trans  &trans     &trans    &trans  &trans          &kp END         &kp HOME      &trans           &trans
+&trans  &trans     &trans  &trans  &trans     &trans    &trans  &none           &kp END         &kp HOME      &none            &trans
                            &trans  &trans     &trans    &trans  &kp LC(MINUS)   &kp LC(PLUS)
             >;
         };
@@ -130,10 +130,10 @@
         MacOSiOS {
             display-name = "Mac";
             bindings = <
-&trans  &kp Q  &kp W            &kp E                                   &kp R                &kp T              &kp Y      &kp U                 &kp I             &kp O             &kp P         &trans
-&trans  &kp A  &HML LEFT_GUI S  &HML LEFT_ALT D                         &HML LEFT_CONTROL F  &kp G              &kp H      &HMR RIGHT_CONTROL J  &HMR RIGHT_ALT K  &HMR RIGHT_GUI L  &kp SEMI      &kp APOS
-&trans  &kp Z  &kp X            &kp C                                   &kp V                &kp B              &kp N      &kp M                 &kp COMMA         &kp DOT           &kp QUESTION  &trans
-                                &lt 4 C_AC_NEXT_KEYBOARD_LAYOUT_SELECT  &lt 6 TAB            &lt 5 BACKSPACE    &kp SPACE  &kp LEFT_SHIFT        &kp ENTER
+&none  &kp Q  &kp W            &kp E                                   &kp R                &kp T              &kp Y      &kp U                 &kp I             &kp O             &kp P             &none
+&none  &kp A  &HML LEFT_GUI S  &HML LEFT_ALT D                         &HML LEFT_CONTROL F  &kp G              &kp H      &HMR RIGHT_CONTROL J  &HMR RIGHT_ALT K  &HMR RIGHT_GUI L  &kp SINGLE_QUOTE  &none
+&none  &kp Z  &kp X            &kp C                                   &kp V                &kp B              &kp N      &kp M                 &kp COMMA         &kp DOT           &kp SLASH         &none
+                               &lt 4 C_AC_NEXT_KEYBOARD_LAYOUT_SELECT  &lt 6 TAB            &lt 5 BACKSPACE    &kp SPACE  &kp LEFT_SHIFT        &kp ENTER
             >;
         };
 
@@ -149,8 +149,8 @@
 
         MacMouse {
             bindings = <
-&trans  &mkp MB4   &trans  &trans  &mkp MB5   &trans    &trans  &msc SCRL_RIGHT  &msc SCRL_UP    &msc SCRL_DOWN    &msc SCRL_LEFT   &trans
-&trans  &mkp LCLK  &trans  &trans  &mkp RCLK  &trans    &trans  &mmv MOVE_LEFT   &mmv MOVE_DOWN  &mmv MOVE_UP      &mmv MOVE_RIGHT  &trans
+&trans  &mkp MB4   &trans  &trans  &mkp MB5   &trans    &none   &msc SCRL_RIGHT  &msc SCRL_UP    &msc SCRL_DOWN    &msc SCRL_LEFT   &none
+&trans  &mkp LCLK  &trans  &trans  &mkp RCLK  &trans    &none   &mmv MOVE_LEFT   &mmv MOVE_DOWN  &mmv MOVE_UP      &mmv MOVE_RIGHT  &trans
 &trans  &trans     &trans  &trans  &trans     &trans    &trans  &none            &kp LG(DOWN)    &kp LG(UP_ARROW)  &none            &trans
                            &trans  &trans     &trans    &trans  &kp LG(MINUS)    &kp LG(PLUS)
             >;
@@ -165,10 +165,10 @@
 
             display-name = "Lower";
             bindings = <
-&trans  &kp EXCL      &kp AT        &kp HASH      &kp DOLLAR    &kp PERCENT      &kp CARET         &kp AMPERSAND      &kp LESS_THAN         &kp GREATER_THAN       &kp TILDE      &trans
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5     &kp NUMBER_6      &kp NUMBER_7       &kp N8                &kp N9                 &kp N0         &trans
-&trans  &kp EQUAL     &kp ASTRK     &kp SLASH     &kp PLUS      &kp MINUS        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH  &trans
-                                    &none         &none         &kp BACKSPACE    &kp SPACE         &kp LEFT_SHIFT     &kp ENTER
+&none  &kp EXCL      &kp AT        &kp HASH      &kp DOLLAR    &kp PERCENT      &kp CARET         &kp AMPERSAND      &kp ASTRK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none
+&none  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5     &kp NUMBER_6      &kp NUMBER_7       &kp N8     &kp N9                &kp N0                 &none
+&none  &kp EQUAL     &kp ASTRK     &kp SLASH     &kp PLUS      &kp MINUS        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp COLON  &kp SEMI              &kp TILDE              &none
+                                   &none         &none         &kp BACKSPACE    &kp SPACE         &kp LEFT_SHIFT     &kp ENTER
             >;
         };
 
