@@ -118,7 +118,7 @@
 
         WindowsMouse {
             bindings = <
-&mkp MB4   &trans  &trans  &mkp MB5   &trans    &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &none
+&mkp MB4   &trans  &trans  &mkp MB5   &trans    &none           &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP   &msc SCRL_RIGHT
 &mkp LCLK  &trans  &trans  &mkp RCLK  &trans    &trans          &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP   &mmv MOVE_RIGHT
 &trans     &trans  &trans  &trans     &trans    &trans          &none           &kp END         &kp HOME       &none
                    &trans  &trans     &trans    &trans          &kp LC(MINUS)   &kp LC(PLUS)
@@ -147,7 +147,7 @@
 
         MacMouse {
             bindings = <
-&mkp MB4   &trans  &trans  &mkp MB5   &trans    &msc SCRL_RIGHT  &msc SCRL_UP    &msc SCRL_DOWN    &msc SCRL_LEFT   &none
+&mkp MB4   &trans  &trans  &mkp MB5   &trans    &none            &msc SCRL_RIGHT  &msc SCRL_UP     &msc SCRL_DOWN   &msc SCRL_LEFT
 &mkp LCLK  &trans  &trans  &mkp RCLK  &trans    &none            &mmv MOVE_LEFT  &mmv MOVE_DOWN    &mmv MOVE_UP     &mmv MOVE_RIGHT
 &trans     &trans  &trans  &trans     &trans    &trans           &none           &kp LG(DOWN)      &kp LG(UP_ARROW) &none
                    &trans  &trans     &trans    &trans           &kp LG(MINUS)   &kp LG(PLUS)
